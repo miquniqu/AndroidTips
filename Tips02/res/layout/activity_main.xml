@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	<FrameLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		>
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			>
+			<LinearLayout
+    		    android:layout_width="fill_parent"
+		        android:layout_height="fill_parent"
+		        android:background="#FFFFAACC"
+		        android:gravity="center"
+    		    >
+			    <Button
+			          android:id="@+id/ButtonContent"
+			          android:layout_width="100dp"
+			          android:layout_height="100dp"
+			          android:layout_weight="1"
+			          android:text="content button"/>
+			</LinearLayout>
+		</RelativeLayout>
+		<RelativeLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical"
+			>
+			<TextView
+		        android:id="@+id/HedderSpace"
+		        android:layout_width="fill_parent"
+		        android:layout_height="48dp"
+		        android:padding="@dimen/padding_medium"
+		        android:gravity="bottom"
+		        android:text="layer1 header text view"
+		        android:layout_alignParentTop="true"
+		        android:background="#FFAAAAAA"
+		        tools:context=".MainActivity" />
+	    	<ScrollView
+	    	    android:id="@+id/ContentSpace"
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent"
+				android:layout_below="@+id/HedderSpace"
+				android:layout_above="@+id/FooterSpace"
+			  >
+				<LinearLayout
+				    android:id="@+id/MenuListLayout"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+ 					android:orientation="vertical"
+   					>
+				</LinearLayout>
+			</ScrollView>
+			<LinearLayout
+		        android:id="@+id/FooterSpace"
+    		    android:layout_width="fill_parent"
+		        android:layout_height="48dp"
+		        android:layout_alignParentBottom="true"
+		        android:background="#FFAAAAAA"
+    		    >
+			    <TextView
+			        android:layout_width="0dp"
+			        android:layout_height="fill_parent"
+			        android:layout_weight="1"
+					android:padding="@dimen/padding_medium"
+			        android:text="layer1 footer text view"
+			        android:textColor="#FF000000"
+			        tools:context=".MainActivity" />
+			    <Button
+			          android:layout_width="0dp"
+			          android:layout_height="fill_parent"
+			          android:layout_weight="1"
+			          android:text="dummy"/>
+			    <Button
+			          android:layout_width="0dp"
+			          android:layout_height="fill_parent"
+			          android:layout_weight="1"
+			          android:text="dummy"/>
+			</LinearLayout>
+    	</RelativeLayout>
+
+	</FrameLayout>
+</RelativeLayout>
