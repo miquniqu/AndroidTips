@@ -23,7 +23,7 @@ import android.widget.Toast;
 public class MainActivity extends Activity implements View.OnClickListener {
 
 	private static final float LIST_DIP = 60.0f;
-	private static final long ANIME_DURATION = 2000;
+	private static final long ANIME_DURATION = 1000;
 
 	ScrollView mContentSpace;
 	LinearLayout mMenuListLayout;
