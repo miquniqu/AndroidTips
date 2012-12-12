@@ -1,0 +1,19 @@
+<resources>
+
+    <style name="MyTheme" parent="@style/Theme.Sherlock.Light">
+        <item name="android:actionBarStyle">@style/MyActionBarStyle</item>
+    </style>
+
+    <style name="MyActionBarStyle" parent="@style/Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="android:background">#0099AA</item>
+        <item name="android:backgroundSplit">#0099AA</item>
+        <item name="android:backgroundStacked">#0099AA</item>
+        <item name="android:titleTextStyle">@style/MyActionBarTitleStyle</item>
+	</style>
+
+    <style name="MyActionBarTitleStyle" parent="@style/TextAppearance.Sherlock.Widget.ActionBar.Title">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+</resources>
