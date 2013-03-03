@@ -1,0 +1,147 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical">
+
+	    <Button
+	        android:id="@+id/hoge_button1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="10dp"
+	        android:text="hoge tabel create" />
+
+	    <Button
+	        android:id="@+id/hoge_button2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="10dp"
+	        android:text="hoge table drop" />
+
+	    <Button
+	        android:id="@+id/hoge_button3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="10dp"
+	        android:text="hoge unique Index create" />
+
+	    <Button
+	        android:id="@+id/hoge_button4"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="10dp"
+	        android:text="hoge unique index drop" />
+
+	    <Button
+	        android:id="@+id/hoge_button5"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="10dp"
+	        android:text="hoge table insert(REPLACE)" />
+
+	    <Button
+	        android:id="@+id/hoge_button6"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="left|center_vertical"
+	        android:paddingLeft="10dp"
+	        android:text="hoge table select count" />
+
+		<Button
+	        android:id="@+id/hogefuga_button1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="20dp"
+			android:gravity="center"
+	        android:text="RENAME TABLE hoge to fuga" />
+
+	    <Button
+	        android:id="@+id/fuga_button1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right|center_vertical"
+	        android:layout_marginTop="10dp"
+	        android:paddingRight="10dp"
+	        android:text="fuga table drop" />
+
+	    <Button
+	        android:id="@+id/fuga_button2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right|center_vertical"
+	        android:layout_marginTop="10dp"
+	        android:paddingRight="10dp"
+	        android:text="fuga index drop" />
+
+	    <Button
+	        android:id="@+id/fuga_button3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right|center_vertical"
+	        android:layout_marginTop="20dp"
+	        android:paddingRight="10dp"
+	        android:text="fuga table insert(REPLACE)" />
+
+	    <Button
+	        android:id="@+id/fuga_button4"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="right|center_vertical"
+	        android:paddingRight="10dp"
+	        android:text="fuga table select count" />
+
+	    <Button
+	        android:id="@+id/all_button"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="20dp"
+	        android:text="AllDrop" />
+
+	    <Button
+	        android:id="@+id/sequential_button1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:layout_marginTop="20dp"
+	        android:text="Sequential1 : hoge no index replase insert" />
+
+	    <Button
+	        android:id="@+id/sequential_button2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Sequential2 : hoge index replase insert" />
+
+	    <Button
+	        android:id="@+id/sequential_button3"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Sequential3 : hogefuga index replase insert(hoge)" />
+
+	    <Button
+	        android:id="@+id/sequential_button4"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="Sequential4 : hogefuga index replase insert(fuga)" />
+
+	</LinearLayout>
+</ScrollView>
